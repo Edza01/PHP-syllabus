@@ -25,3 +25,23 @@
 //| Employee 3 | $10.00 | 73 |
 
 
+function calculateWage($basePay, $hoursWorked)
+{
+    if ($basePay < 8) return 'error, input is less than minimum allowed wage';
+    else
+    {
+        if ($hoursWorked < 40) return $hoursWorked * $basePay;
+        else if ($hoursWorked > 60) return'error, Dont work to much, else you will get too good at stuff';
+        else if ($hoursWorked > 40)
+        {
+            $hoursOverWorked = $hoursWorked - 40;
+            return ($hoursOverWorked * $basePay) * 1.5;
+        }
+    }
+}
+
+print_r('Employee 1' . calculateWage(7.50, 35));
+echo "<br>";
+print_r( 'Employee 2' .calculateWage(8.20, 47));
+echo "<br>";
+print_r('Employee 3' .calculateWage('Employee 1' . 10.00, 73));
