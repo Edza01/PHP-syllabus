@@ -9,8 +9,18 @@ $numbers = [
 //todo
 echo "Original numeric array: ";
 
+print("<pre>".print_r($numbers,true)."</pre>");
+
 //todo
 echo "Sorted numeric array: ";
+asort($numbers);
+
+foreach ($numbers as $key => $val) {
+    print("<pre>".print_r($key = $val,true)."</pre>");
+}
+
+
+
 
 $words = [
     "Java",
@@ -23,6 +33,14 @@ $words = [
 
 //todo
 echo "Original string array: ";
+print("<pre>".print_r($words,true)."</pre>");
+
 
 //todo
 echo "Sorted string array: ";
+
+asort($words);
+
+foreach ($words as $key => $val) {
+    print("<pre>".print_r($key = $val,true)."</pre>");
+}

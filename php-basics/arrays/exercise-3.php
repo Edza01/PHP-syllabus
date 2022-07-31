@@ -9,3 +9,17 @@ $numbers = [
 echo "Enter the value to search for: ";
 
 //todo check if an array contains a value user entered
+
+?>
+
+<form name="form" action="" method="get">
+    <input type="text" name="value" id="subject">
+</form>
+
+<?php
+
+if (isset($_GET['value']))
+{
+    if( in_array( $_GET['value'] ,$numbers ) ) echo "yes";
+    else echo 'no';
+}
