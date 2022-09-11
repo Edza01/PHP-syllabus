@@ -36,7 +36,7 @@ if(isset($_POST["SubmitButton"]))
         $score += $randomNumber;
         $_SESSION["score"] = $score;
     }
-   
+
     print_r($score);
 }
 ?>

@@ -11,8 +11,6 @@ if (!isset($_SESSION["rand_keys"]))
 $rand_keys = $_SESSION["rand_keys"];
 $randomWord = $input[$rand_keys[0]];
 
-print_r($randomWord);
-
 $randomWordCharArr = str_split($randomWord);
 
 if (!isset($_SESSION["hiddenWord"]))
