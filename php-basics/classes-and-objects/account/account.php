@@ -43,10 +43,8 @@ $secondAcc = new Account("name2", 20);
 $firstAcc->withdraw(5);
 print_r($firstAcc);
 echo "<br>";
-
 $firstAcc->deposit(15);
 print_r($firstAcc);
 echo "<br>";
-
 $firstAcc->transfer($firstAcc, $secondAcc, 10);
 print_r($secondAcc);
