@@ -1,0 +1,109 @@
+body {
+    background-color: #8a2a25;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.gridItems1 {
+    background-color: #545454;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.gridItems-add {
+    background-color: #545454;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+#gridItemsPopup-add {
+    display: none;
+}
+
+.gridItems-rent {
+    background-color: #545454;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+#gridItemsPopup-rent {
+    display: none;
+}
+
+#errorMessageFormInputs-add {
+    display: none;
+    color: red;
+}
+
+#errorMessageFormInputs-rent {
+    display: none;
+    color: red;
+}
+
+.gridItems-list {
+    background-color: #545454;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+#gridItemsPopup-list {
+    display: none;
+}
+
+.listInventoryTableContainer {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align:center;
+    color: white;
+    border-collapse: collapse;
+}
+
+.chooseGrid {
+    display: grid;
+    grid-template-columns: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.chooseGridContainer {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    gap: 2rem;
+}
+
+.chooseGridButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItems-return {
+    background-color: #545454;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+#errorMessageFormInputs-return {
+    display: none;
+    color: red;
+}
+
+#gridItemsPopup-return {
+    display: none;
+}
