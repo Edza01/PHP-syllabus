@@ -2,8 +2,7 @@
     <head>
         <link rel="stylesheet" href="/php-basics/classes-and-objects/account/style.css">
     </head>
-    <body>
-    </body>
+
 </html>
 
 <?php
