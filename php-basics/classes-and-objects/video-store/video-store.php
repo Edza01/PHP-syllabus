@@ -36,6 +36,8 @@ class Application
         }
     }
 
+
+
     private function add_movies()
     {
         //todo
@@ -64,7 +66,25 @@ class VideoStore
 
 class Video
 {
+    public $title, $status, $rating;
 
+    public function __construct($title, $status, $rating)
+    {
+        $this->title = $title;
+        $this->status = $status;
+        $this->rating = $rating;
+    }
+
+    function checkIfVideoExists($array) {
+        $filtered_arr = array_filter(
+            $array,function($arr){
+            return $arr->title == $this->title;
+        });
+
+        foreach ($filtered_arr as $obj) {
+            return $obj->title;
+        }
+    }
 }
 
 $app = new Application();
