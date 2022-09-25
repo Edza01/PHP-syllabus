@@ -12,10 +12,9 @@ class BankAccount {
 
     function show_user_name_and_balance($array) {
         $filtered_arr = array_filter(
-                $array,function($arr){
-                return $arr->accName == $this->accName;
-            }
-        );
+            $array,function($arr){
+            return $arr->accName == $this->accName;
+        });
 
         foreach ($filtered_arr as $obj) {
             $balance = number_format((float)$obj ->balance, 2, '.', '');
